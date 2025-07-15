@@ -1,0 +1,137 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 10px;
+    flex-wrap: wrap; /* 讓在小螢幕上可以換行 */
+}
+
+.input-group label {
+    font-weight: bold;
+    color: #34495e;
+}
+
+.input-group input[type="text"] {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    flex-grow: 1; /* 讓輸入框佔據更多空間 */
+    max-width: 200px;
+}
+
+.input-group button {
+    padding: 10px 20px;
+    background-color: #28a745; /* 綠色按鈕 */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.input-group button:hover {
+    background-color: #218838;
+}
+
+#loadingMessage {
+    text-align: center;
+    color: #007bff;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+#mapContainer {
+    height: 400px; /* 地圖高度 */
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+}
+
+#results h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+#carInfo {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    max-height: 250px; /* 如果有很多車輛，可以滾動 */
+    overflow-y: auto;
+}
+
+#carInfo div {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #ced4da;
+}
+
+#carInfo div:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#carInfo p {
+    margin: 5px 0;
+    text-align: left;
+    color: #495057;
+}
+
+#carInfo strong {
+    color: #007bff; /* 藍色強調 */
+}
+
+#errorMessage {
+    color: #dc3545; /* 紅色錯誤訊息 */
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
