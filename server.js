@@ -3,7 +3,7 @@ const express = require('express');
 const cors = require('cors'); // 引入 cors 套件來處理前端的 CORS
 
 const app = express();
-const port = 3000; // 您可以選擇不同的埠號
+const port = process.env.PORT ||  3000; // 您可以選擇不同的埠號
 
 // 允許來自 http://localhost:8000 的跨域請求
 // 或者如果您希望任何來源都可以訪問您的代理，可以使用 cors()
