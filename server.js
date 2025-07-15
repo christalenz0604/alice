@@ -9,7 +9,7 @@ const port = 3000; // 您可以選擇不同的埠號
 // 或者如果您希望任何來源都可以訪問您的代理，可以使用 cors()
 // 但為了安全，建議指定特定來源
 app.use(cors({
-    origin: 'http://localhost:8000' // 允許您的前端 localhost:8000 訪問此代理
+    origin: 'https://christalenz0604.github.io/alice/' // 允許您的前端 localhost:8000 訪問此代理
 }));
 
 // 定義一個代理路由

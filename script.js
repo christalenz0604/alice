@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         showLoading();
 
-        const proxyApiUrl = `http://localhost:3000/api/proxy-trash-data?page=0&size=100`;
+        const proxyApiUrl = `https://christalenz0604.github.io/alice/api/proxy-trash-data?page=0&size=100`;
 
         try {
             const response = await fetch(proxyApiUrl);
